@@ -297,11 +297,13 @@ footer {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  padding: 10px;
   margin-left: 0; /* Override btn-outline margin */
   text-align: left;
   background: var(--card-bg);
   border-color: var(--border-color);
   color: var(--text-color);
+  border-radius: 12px;
 }
 
 .cert-btn:hover {
