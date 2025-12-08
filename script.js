@@ -59,5 +59,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Mobile Menu Logic
+  const mobileBtn = document.getElementById("mobile-menu-btn");
+  const nav = document.querySelector("nav");
+
+  if (mobileBtn && nav) {
+    mobileBtn.addEventListener("click", () => {
+      mobileBtn.classList.toggle("active");
+      nav.classList.toggle("active");
+    });
+
+    // Close menu when clicking a link
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        // Only close if it's not the contact link (which opens modal)
+        if (link.id !== "contact-link") {
+          mobileBtn.classList.remove("active");
+          nav.classList.remove("active");
+        }
+      });
+    });
+  }
+
   console.log("Portafolio cargado correctamente ✨");
 });
