@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio de Desarrollador Web - Proyectos y Habilidades"
+    />
+    <title>Portafolio | Inicio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Portafolio.</div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="about.html">Quién Soy</a></li>
+          <li><a href="projects.html">Proyectos</a></li>
+          <li><a href="#" id="contact-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="fade-in">
+          <span
+            style="
+              color: var(--accent-color);
+              font-weight: 600;
+              letter-spacing: 1px;
+            "
+            >HOLA, SOY ATCHEN</span
+          >
+          <h1>Construyo webs<br />simples y modernas.</h1>
+          <p>
+            Me gusta hacer que las ventas Online sean accesibles para todos.
+          </p>
+          <div class="cta-group">
+            <a href="projects.html" class="btn">Ver Proyectos</a>
+            <a href="about.html" class="btn btn-outline">Sobre Mí</a>
+            <a
+              href="/image/AtchenValladaresAlonsoResume-2.pdf"
+              class="btn btn-outline"
+              target="_blank"
+              >Ver CV</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mi Portafolio. Creado con HTML, CSS y JS.</p>
+    </footer>
+
+    <div id="contact-modal" class="modal-overlay">
+      <div class="modal-content">
+        <button id="modal-close" class="modal-close">&times;</button>
+        <h2>Contáctame</h2>
+        <div class="contact-item">
+          <span class="contact-label">Teléfono</span>
+          <a href="tel:610357068" class="contact-value">610 357 068</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <a href="mailto:acen0027@gmail.com" class="contact-value"
+            >acen0027@gmail.com</a
+          >
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <a
+            href="https://www.linkedin.com/in/atchen-dev"
+            target="_blank"
+            class="contact-value"
+            >linkedin.com/in/atchen-dev</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

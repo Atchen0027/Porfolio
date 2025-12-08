@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mis Proyectos - Portafolio" />
+    <title>Portafolio | Proyectos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Portafolio.</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Quién Soy</a></li>
+          <li><a href="projects.html" class="active">Proyectos</a></li>
+          <li><a href="#" id="contact-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="fade-in">
+        <h2>Mis Proyectos</h2>
+        <br />
+        <div class="projects-grid">
+          <!-- Proyecto 1 -->
+          <article class="project-card">
+            <div>
+              <h3>E-commerce Wordpress</h3>
+              <p>
+                Una tienda completa y facil de usar para vendedores pequeños de
+                redes sociales
+              </p>
+              <div class="project-tags">
+                <span class="tag">Wordpress</span>
+                <span class="tag">WooCommerce</span>
+                <span class="tag">Elementor</span>
+              </div>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a
+                href="https://tienda.atchenvalladares.es/"
+                class="btn"
+                style="font-size: 0.9rem; padding: 0.5rem 1.5rem"
+                >Ver Demo</a
+              >
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="project-card">
+            <div>
+              <h3>Landing Page</h3>
+              <p>
+                Una página diseñada en WordPress para mostrar tu negocio de
+                forma clara y directa. Incluye toda la información esencial
+                —identidad, productos y contacto— organizada en un solo lugar,
+                sin menús complicados ni distracciones.
+              </p>
+              <div class="project-tags">
+                <span class="tag">wordpress</span>
+                <span class="tag">elementor</span>
+                <span class="tag">mysql</span>
+              </div>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a
+                href="https://landing.atchenvalladares.es/"
+                class="btn"
+                style="font-size: 0.9rem; padding: 0.5rem 1.5rem"
+                >Ver Demo</a
+              >
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="project-card">
+            <div>
+              <h3>Web de reservas</h3>
+              <p>
+                Web para negocios que permiten reservar servicios o productos
+                online. con conexion con google calendar
+              </p>
+              <div class="project-tags">
+                <span class="tag">Wordpress</span>
+                <span class="tag">elementor</span>
+                <span class="tag">mysql</span>
+                <span class="tag">Amelia</span>
+              </div>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <a
+                href="https://gestorcitas.atchenvalladares.es/"
+                class="btn"
+                style="font-size: 0.9rem; padding: 0.5rem 1.5rem"
+                >Ver Demo</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mi Portafolio. Creado con HTML, CSS y JS.</p>
+    </footer>
+
+    <div id="contact-modal" class="modal-overlay">
+      <div class="modal-content">
+        <button id="modal-close" class="modal-close">&times;</button>
+        <h2>Contáctame</h2>
+        <div class="contact-item">
+          <span class="contact-label">Teléfono</span>
+          <a href="tel:610357068" class="contact-value">610 357 068</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <a href="mailto:acen0027@gmail.com" class="contact-value"
+            >acen0027@gmail.com</a
+          >
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <a
+            href="https://www.linkedin.com/in/atchen-dev"
+            target="_blank"
+            class="contact-value"
+            >linkedin.com/in/atchen-dev</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
