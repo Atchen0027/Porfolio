@@ -1,31 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Aquí puedes agregar interactividad adicional
-
-  // Ejemplo: Pequeña animación al hacer scroll (Intersection Observer)
-  const observerOptions = {
-    threshold: 0.1,
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = "1";
-        entry.target.style.transform = "translateY(0)";
-      }
-    });
-  }, observerOptions);
-
-  // Animación suave para los enlaces de navegación
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
-      document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth",
-      });
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
     });
   });
 
-  // Certificate Toggle Logic
   const certToggle = document.getElementById("cert-toggle");
   const certContainer = document.getElementById("cert-container");
 
@@ -36,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Contact Modal Logic
   const contactLink = document.getElementById("contact-link");
   const contactModal = document.getElementById("contact-modal");
   const modalClose = document.getElementById("modal-close");
@@ -51,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
       contactModal.classList.remove("active");
     });
 
-    // Close when clicking outside content
     contactModal.addEventListener("click", (e) => {
       if (e.target === contactModal) {
         contactModal.classList.remove("active");
@@ -59,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Mobile Menu Logic
   const mobileBtn = document.getElementById("mobile-menu-btn");
   const nav = document.querySelector("nav");
 
@@ -69,10 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
       nav.classList.toggle("active");
     });
 
-    // Close menu when clicking a link
     nav.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
-        // Only close if it's not the contact link (which opens modal)
         if (link.id !== "contact-link") {
           mobileBtn.classList.remove("active");
           nav.classList.remove("active");
@@ -80,6 +60,4 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-
-  console.log("Portafolio cargado correctamente ✨");
 });
